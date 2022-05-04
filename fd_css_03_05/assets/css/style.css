@@ -1,53 +1,19 @@
 
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Water Brush', cursive; */
-body{
-  /* margin: 0; */
+.main{
+  padding: 10px;
+  background-color: bisque;
+  font-size: 16px;
 }
-.gallery{
-  text-align:center;
-}
-.image {
+
+.article{
   box-sizing: border-box;
-width: 300px;
-height: 300px;
-padding:  7px;
-margin: 10px;
-border: 5px solid beige;
-object-fit: cover;
-object-position: right;
-background-color: teal;
-}
-
-.span{
   display: inline-block;
-  width: 400px;
-  padding:  0 20px;
-  border:2px solid red;
-  box-sizing:border-box;
-  margin: 10px;
-
+  width: 33.33%;
+  padding: 20px;
+  vertical-align: top;
 }
-
-.div{
-  display: inline-block;
-  width: 25%;
-  /* height: 50px; */
-  padding:   20px;
-  border:2px solid blue;
-  box-sizing:border-box;
-  /* margin: 30px auto; */
-
-}
-
-.margin{
-  margin-top: -30px;
-}
-
-.content {
-  color:red;
-}
-
-.top-position{
-  object-position: 0px -13px;
+.heading{
+  font-size: inherit;
 }
