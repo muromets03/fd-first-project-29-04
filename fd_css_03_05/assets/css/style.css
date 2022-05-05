@@ -1,12 +1,17 @@
-.btn{
-  display: inline-block;
-  min-width: 100px;
-  max-width: 120px;
-  /* max-width: 150px; */
+body{
+  margin: 0;
+}
 
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 1.5em;
-  text-transform: uppercase;
+.container{
+  height: 100vh;
+  background-color:rgb(37, 53, 53);
+  background-image: url(../images/sea_1024.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+}
+.heading{
+  color:aliceblue;
+  text-align: center;
+  padding-top: 5%;
 }
