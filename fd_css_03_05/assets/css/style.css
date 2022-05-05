@@ -5,10 +5,9 @@ body{
 .container{
   height: 100vh;
   background-color:rgb(37, 53, 53);
-  background-image: url(../images/sea_1024.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right bottom;
+  background-image: url(../images/sea_1024.jpg), url(../images/sea_1024.jpg);
+  background-size: 100px;
+  background-repeat: repeat-x, repeat-y;
 }
 .heading{
   color:aliceblue;
