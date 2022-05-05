@@ -1,19 +1,32 @@
-
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Water Brush', cursive; */
-.main{
-  padding: 10px;
-  background-color: bisque;
-  font-size: 16px;
+body{
+  margin: 0;
 }
-
-.article{
+.wrapper{
   box-sizing: border-box;
-  display: inline-block;
-  width: 33.33%;
-  padding: 20px;
-  vertical-align: top;
+  /* min-width:50vh; */
+width: 70%;
+/* max-width: 400px; */
+min-height: 20vh;
+height: auto;
+max-height: 50vh;
+
+border: 3px solid red;
+margin: auto;
+overflow: auto;
+
 }
-.heading{
-  font-size: inherit;
+
+.inner{
+  box-sizing: border-box;
+  width: 50%;
+  /* height: 50%; */
+  padding: 5%;
+  border: inherit;
+  border-color: blue;
+  /* margin: 10%; */
+ 
 }
+
+/*
+vw vh vmin vmax
+*/
