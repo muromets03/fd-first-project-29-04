@@ -1,0 +1,139 @@
+/* 
+p{
+  color:blue;
+  text-indent: 2em;
+}
+
+p::first-letter{
+  color:orange;
+  background-color: firebrick;
+  font-size: 2em;
+  text-shadow: -12px -11px 3px rgba(255, 150, 150, 0.66);
+  
+}
+p::first-line{
+color: aqua;
+background-color: rgb(118, 89, 68);
+}
+
+p::selection {
+  color:chartreuse;
+  background-color: rgb(74, 15, 15);
+} */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 300vh;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+
+.page-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 0 7px 1px lightgrey;
+}
+
+.list {
+  text-align: center;
+}
+.list-item {
+  display: inline-block;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+/* .list-item + .list-item{
+  padding-left: 10px;
+} */
+.list-link {
+  display: block;
+  padding: 1em 2em;
+  background-color: oldlace;
+  transition-property: background-color;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+  transition-delay: 400ms;
+}
+.list-link:hover {
+  background-color: orange;
+}
+.list-link::before, 
+.list-link::after  {
+  content: " ";
+  display: block;
+  width: 0%;
+  height: 5px;
+  position: absolute;
+  background-color: blue;
+  transition-property: width;
+  transition-duration: 700ms;
+  transition-timing-function: ease-out;
+  transition-delay: 800ms;
+}
+
+.list-link::after {
+  left: 0;
+  bottom: -5px;
+}
+
+.list-link::before{
+  right: 0;
+  top: -5px;
+ 
+}
+
+
+.list-link:hover::after, .list-link:hover::before {
+  width: 100%;
+}
+
+main {
+  padding-top: 6em;
+}
+
+h1 {
+  margin: auto;
+  width: 200px;
+  text-align: center;
+  position: relative;
+}
+h1::before,
+h1::after {
+  content: url(../icons/flower-tulip.svg);
+  display: inline-block;
+  width: 0;
+  height: 5px;
+  /* background-color: aqua; */
+  position: absolute;
+  right: 0;
+}
+
+h1::after {
+  right: 25px;
+}
+h1::before {
+  left: 25px;
+}
+
+.animate__animated{
+  animation-iteration-count:5;
+
+  background-color: green;
+  padding-left: 50px;
+}
